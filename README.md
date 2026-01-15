@@ -41,7 +41,7 @@ Jika Anda meng-clone project ini, lakukan langkah-langkah berikut:
 1. **Clone Repository**:
    ```bash
    https://github.com/niy-ubm/klinik-mini-uas.git
-   cd klinik-mini
+   cd klinik-mini-uas
 
 2. **Install Dependencies**:
    ```bash
@@ -51,7 +51,7 @@ Jika Anda meng-clone project ini, lakukan langkah-langkah berikut:
 3. **Setup Environment: Salin template .env, generate key aplikasi, dan sesuaikan konfigurasi database di file .env yang baru dibuat.**:
    ```bash
    cp .env.example .env
-   php artisan key:generate```
+   php artisan key:generate
 
 4. **Migrasi & Seeding: Siapkan database kosong di MariaDB, lalu jalankan perintah berikut untuk membuat tabel dan mengisi data awal (Poli & Dokter)**:
    ```bash
