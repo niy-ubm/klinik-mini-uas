@@ -40,7 +40,7 @@ Jika Anda meng-clone project ini, lakukan langkah-langkah berikut:
 
 1. **Clone Repository**:
    ```bash
-   git clone [https://github.com/username/klinik-mini.git](https://github.com/username/klinik-mini.git)
+   https://github.com/niy-ubm/klinik-mini-uas.git
    cd klinik-mini
 
 2. **Install Dependencies**:
