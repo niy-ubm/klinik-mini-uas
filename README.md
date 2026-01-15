@@ -41,47 +41,40 @@ Jika Anda meng-clone project ini, lakukan langkah-langkah berikut:
 1. **Clone Repository**:
    ```bash
    git clone [https://github.com/username/klinik-mini.git](https://github.com/username/klinik-mini.git)
-   cd klinik-mini```
+   cd klinik-mini
 
 2. **Install Dependencies**:
-```bash
-
+   ```bash
    composer install
-   npm install```
+   npm install
 
 3. **Setup Environment: Salin template .env, generate key aplikasi, dan sesuaikan konfigurasi database di file .env yang baru dibuat.**:
-```bash
-
+   ```bash
    cp .env.example .env
    php artisan key:generate```
 
 4. **Migrasi & Seeding: Siapkan database kosong di MariaDB, lalu jalankan perintah berikut untuk membuat tabel dan mengisi data awal (Poli & Dokter)**:
-```bash
-
-php artisan migrate --seed```
+   ```bash
+   php artisan migrate --seed
 
 5. **Build Aset Frontend**:
-```bash
-
-   npm run build```
+   ```bash
+   npm run build
 
 
 
 ## Menjalankan Aplikasi
 
 **Mode Development**
-Jalankan server Laravel dan Vite secara bersamaan:
-```bash
-
-php artisan serve --host 0.0.0.0
-npm run dev -- --host```
+* Jalankan server Laravel dan Vite secara bersamaan:
+   ```bash
+   php artisan serve --host 0.0.0.0
+   npm run dev -- --host
 
 **Mode Produksi (Background dengan PM2)**
-Gunakan file ekosistem agar aplikasi tetap berjalan meski terminal ditutup:
-```bash
-
-pm2 start ecosystem.config.cjs```
-
+* Gunakan file ekosistem agar aplikasi tetap berjalan meski terminal ditutup
+   ```bash
+   pm2 start ecosystem.config.cjs
 
 **Akun Default (Seeder)**
 * Admin: admin@klinik.com | Password: password
